@@ -483,15 +483,19 @@ if (reversed == null) { reversed = false; }
 	this.hominid.setTransform(-14.2,90.45,1.17,1.17);
 
 	this.shape = new cjs.Shape();
-	this.shape.graphics.rf(["#FFFFFF","rgba(255,255,255,0.529)","rgba(255,255,255,0)"],[0.584,0.906,0.957],9.9,-2.4,0,9.9,-2.4,819.2).s().p("ANUFwIg4gXQgdgLgLgGQgagNglgoQgmgqgMgeQgHgTgCgaIgBgwQgBiLAChGQACggADgeIgSgBQgXgEgQgMQgYgRgDghQgDggAUgWQASgSAegGQAUgEAfgBQAQgpAWgQQAZgRAgAJQAgAIANAbQAIANABARICBABQAeAAAQACQAaAEAQAMQAbAUABAlQABAmgbATQgOALgWAEQgPADgaAAIivAAQgFAoABAyIABCSQgCAtAEAQQAHAkAbAMQAIADASADQAQADAJAFQAGADALAJQAKAJAGADQAIAEAMACIAVAFQAUAGAPASQAOASACAVQACAWgLAUQgLAUgTALQgSAKgZAAQgbAAgjgMgAAlEgQgSgHgMgOQgLgOgEgSQgDgTAFgRQAEgPAOgXQgSgMgNgXQgLgVgDgZQgCgTAAgeIABgvIgBhBQACglAPgWQAUggAugMQAdgHA1ABICAAAQAqAAATAJQATAIAMASQALASABAUQABAVgLASQgLATgSAJQgVALgsABIiQADIgBA9QAAAOADAGQAFAJAUAIQAbAMATAXQATAXAGAcQAFAcgKAcQgKAdgXARQgJAHgQAHIgbALIgYAKQgOAFgMACIgJAAQgNAAgNgFgAl2EYQgqAAgUgGQgjgLgYggQgXgegJgnQgIgfgBgrIABhMQgBgjABgNQACgcAIgTQALgZAYgXQAXgYAXgLQAUgJAcgDQARgCAgAAIBeAAQAZAAAOACQAVAEAOAKQATANAJAbQAHAXgCAcQgDA3gdAVQgOAMgXADQgPACgcAAIh9gCQgFA2AFA3IBzgCQAXgBAIgCQAGgBALgEIASgGQATgEATAIQATAHAMAQQALAPADAUQADAUgHATQgNAlgmASQgTAJgYACQgPACgeAAgAtFD9QgUgBgRgNQgRgMgHgTQgHgRAAgmIAAiGQgBg2ADgjIAGg+QAEggAFgOIAFgMIhPAAQgnAAgUgIQgUgIgMgTQgMgTAAgWQABgWANgTQANgSAUgIQARgHAkAAIF/AAQAlAAARAHQATAHANAQQANAQADAUQADAUgJATQgIATgRALQgPAKgXAEQgOACgbAAIhPgBQgDAUgOAPQgRASgWAFQgOADgDAEQgEAFAAAPQAAAGgHAlQgDAUAAAqIABCNQAAAbgBANQgDAWgKAQQgKARgTAKQgPAIgRAAIgHgBg");
-	this.shape.setTransform(-9.9492,2.4844);
+	this.shape.graphics.f().s("#00FFFF").ss(2,1).p("AK3AAQAACmjLB1QjMB1kgAAQkfAAjMh1QjLh1AAimQAAikDLh2QDMh1EfAAQEgAADMB1QDLB2AACkg");
+	this.shape.setTransform(15.55,18.05);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.fox}]}).to({state:[{t:this.hominid}]},1).to({state:[{t:this.shape}]},1).wait(1));
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f("#002020").s().p("AnqEaQjMh0AAimQAAilDMh1QDLh1EfAAQEgAADMB1QDLB1AAClQAACmjLB0QjMB2kgAAQkfAAjLh2g");
+	this.shape_1.setTransform(15.55,18.05);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.fox}]}).to({state:[{t:this.hominid}]},1).to({state:[{t:this.shape_1},{t:this.shape}]},1).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-116.5,-97.4,213.1,191);
+p.nominalBounds = new cjs.Rectangle(-73,-97.4,159.1,191);
 
 
 (lib.Button = function(mode,startPosition,loop,reversed) {
