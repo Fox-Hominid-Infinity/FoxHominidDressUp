@@ -4815,13 +4815,6 @@ if (reversed == null) { reversed = false; }
 
 	this.timeline.addTween(cjs.Tween.get(this.minecraft_chicken_body).to({x:52.35,y:68.6},5,cjs.Ease.quadInOut).to({x:74.65,y:85.6},5,cjs.Ease.quadInOut).to({x:97,y:71.6},5,cjs.Ease.quadInOut).to({x:119.3,y:85.6},5,cjs.Ease.quadInOut).to({x:141.65,y:69.6},5,cjs.Ease.quadInOut).to({x:163.95,y:85.6},5,cjs.Ease.quadInOut).to({x:186.3,y:73.6},5,cjs.Ease.quadInOut).to({x:208.65,y:85.6},5,cjs.Ease.quadInOut).to({x:231,y:72.6},5,cjs.Ease.quadInOut).to({x:253.3,y:85.6},5,cjs.Ease.quadInOut).to({x:275.65,y:71.6},5,cjs.Ease.quadInOut).to({x:298,y:85.6},5,cjs.Ease.quadInOut).to({x:320.35,y:71.6},5,cjs.Ease.quadInOut).to({x:342.65,y:85.6},5,cjs.Ease.quadInOut).to({x:365,y:71.6},5,cjs.Ease.quadInOut).to({x:387.3,y:85.6},5,cjs.Ease.quadInOut).to({x:409.65,y:72.6},5,cjs.Ease.quadInOut).to({x:432,y:85.6},5,cjs.Ease.quadInOut).to({y:94.6},10,cjs.Ease.quadInOut).to({y:85.6},10,cjs.Ease.quadInOut).to({skewX:100.1961,skewY:-79.8039,x:438.6,y:85.4},10,cjs.Ease.quadInOut).to({regX:-0.1,regY:-0.1,skewX:110.0966,skewY:-69.9034,x:444,y:86.75},10,cjs.Ease.quadInOut).to({regX:0,regY:0,skewX:90,skewY:-90,x:432,y:85.6},10,cjs.Ease.quadInOut).to({skewX:81.8003,skewY:-98.1997,x:426.1,y:88.25},10,cjs.Ease.quadInOut).to({regY:-0.1,skewX:100.8991,skewY:-79.1009,x:439.65},10,cjs.Ease.quadInOut).to({regY:0,skewX:90,skewY:-90,x:432,y:85.6},10,cjs.Ease.quadInOut).to({skewX:79.2838,skewY:-100.7162,x:424.75,y:88.95},10,cjs.Ease.quadInOut).to({regX:-0.1,regY:-0.1,skewX:109.5614,skewY:-70.4386,x:443.25,y:86.9},10,cjs.Ease.quadInOut).to({regX:-0.2,scaleX:0.9999,scaleY:0.9999,skewX:74.2974,skewY:-105.7026,x:421.55,y:89.1},10,cjs.Ease.quadInOut).to({regX:0,regY:0,scaleX:1,scaleY:1,skewX:90,skewY:-90,x:432,y:85.6},10,cjs.Ease.quadInOut).to({x:451.15,y:73.75},5,cjs.Ease.quadInOut).to({x:470.3,y:85.6},5,cjs.Ease.quadInOut).to({x:489.45,y:73.3},5,cjs.Ease.quadInOut).to({x:508.6,y:85.6},5,cjs.Ease.quadInOut).to({x:527.75,y:74.25},5,cjs.Ease.quadInOut).to({x:546.9,y:85.6},5,cjs.Ease.quadInOut).to({x:566.05,y:72.8},5,cjs.Ease.quadInOut).to({x:585.2,y:85.6},5,cjs.Ease.quadInOut).to({x:604.35,y:71.8},5,cjs.Ease.quadInOut).to({x:623.5,y:85.6},5,cjs.Ease.quadInOut).to({x:642.65,y:74.75},5,cjs.Ease.quadInOut).to({x:661.8,y:85.6},5,cjs.Ease.quadInOut).to({x:680.95,y:75.75},5,cjs.Ease.quadInOut).to({x:700.1,y:85.6},5,cjs.Ease.quadInOut).to({x:719.25,y:72.75},5,cjs.Ease.quadInOut).to({x:738.4,y:85.6},5,cjs.Ease.quadInOut).to({x:757.55,y:70.8},5,cjs.Ease.quadInOut).to({x:776.7,y:85.6},5,cjs.Ease.quadInOut).to({x:795.85,y:71.75},5,cjs.Ease.quadInOut).to({x:815,y:85.6},5,cjs.Ease.quadInOut).wait(1));
 
-	// Front_Leg
-	this.minecraft_chicken_feet_left = new lib.MinecraftChickenLeg("synched",0);
-	this.minecraft_chicken_feet_left.name = "minecraft_chicken_feet_left";
-	this.minecraft_chicken_feet_left.setTransform(30.4,125.75,0.9999,0.9999,0,0,180);
-
-	this.timeline.addTween(cjs.Tween.get(this.minecraft_chicken_feet_left).to({regX:-0.1,regY:0.1,skewX:-36.0011,skewY:143.9989,x:52.9,y:109},5,cjs.Ease.quadInOut).to({regX:0,regY:0,skewX:0,skewY:180,x:75.1,y:125.8},5,cjs.Ease.quadInOut).to({regX:-0.1,skewX:35.7947,skewY:215.7947,x:97.5,y:111.95},5,cjs.Ease.quadInOut).to({regX:0,skewX:0,skewY:180,x:119.8,y:125.85},5,cjs.Ease.quadInOut).to({skewX:-34.9815,skewY:145.0185,x:142.2,y:109.95},5,cjs.Ease.quadInOut).to({skewX:0,skewY:180,x:164.5,y:125.9},5,cjs.Ease.quadInOut).to({skewX:29.9991,skewY:209.9991,x:186.9,y:114},5,cjs.Ease.quadInOut).to({skewX:0,skewY:180,x:209.2,y:125.95},5,cjs.Ease.quadInOut).to({skewX:-29.7575,skewY:150.2425,x:231.65,y:112.95},5,cjs.Ease.quadInOut).to({skewX:0,skewY:180,x:253.9,y:125.95},5,cjs.Ease.quadInOut).to({skewX:24.457,skewY:204.457,x:276.3,y:112},5,cjs.Ease.quadInOut).to({skewX:0,skewY:180,x:298.55,y:125.95},5,cjs.Ease.quadInOut).to({skewX:-29.9991,skewY:150.0009,x:320.95,y:111.95},5,cjs.Ease.quadInOut).to({skewX:0,skewY:180,x:343.2,y:125.95},5,cjs.Ease.quadInOut).to({skewX:35.1993,skewY:215.1993,x:365.5,y:111.95},5,cjs.Ease.quadInOut).to({skewX:0,skewY:180,x:387.8,y:125.9},5,cjs.Ease.quadInOut).to({skewX:-29.9991,skewY:150.0009,x:410.15,y:112.85},5,cjs.Ease.quadInOut).to({skewX:0,skewY:180,x:432.4,y:125.75},5,cjs.Ease.quadInOut).to({startPosition:0},10,cjs.Ease.quadInOut).to({startPosition:0},10,cjs.Ease.quadInOut).to({startPosition:0},10,cjs.Ease.quadInOut).to({startPosition:0},10,cjs.Ease.quadInOut).to({startPosition:0},10,cjs.Ease.quadInOut).to({startPosition:0},10,cjs.Ease.quadInOut).to({startPosition:0},10,cjs.Ease.quadInOut).to({startPosition:0},10,cjs.Ease.quadInOut).to({startPosition:0},10,cjs.Ease.quadInOut).to({startPosition:0},10,cjs.Ease.quadInOut).to({startPosition:0},10,cjs.Ease.quadInOut).to({startPosition:0},10,cjs.Ease.quadInOut).to({skewX:-26.4454,skewY:153.5546,x:451.55,y:113.95},5,cjs.Ease.quadInOut).to({skewX:0,skewY:180,x:470.7,y:125.8},5,cjs.Ease.quadInOut).to({skewX:29.9991,skewY:209.9991,x:489.85,y:113.55},5,cjs.Ease.quadInOut).to({skewX:0,skewY:180,x:509,y:125.85},5,cjs.Ease.quadInOut).to({skewX:-29.9991,skewY:150.0009,x:528.15,y:114.55},5,cjs.Ease.quadInOut).to({skewX:0,skewY:180,x:547.3,y:125.9},5,cjs.Ease.quadInOut).to({skewX:24.4359,skewY:204.4359,x:566.45,y:113.15},5,cjs.Ease.quadInOut).to({skewX:0,skewY:180,x:585.6,y:125.95},5,cjs.Ease.quadInOut).to({skewX:-29.9991,skewY:150.0009,x:604.75,y:112.2},5,cjs.Ease.quadInOut).to({skewX:0,skewY:180,x:623.9,y:125.95},5,cjs.Ease.quadInOut).to({skewX:29.9991,skewY:209.9991,x:643.05,y:115.1},5,cjs.Ease.quadInOut).to({skewX:0,skewY:180,x:662.2,y:125.95},5,cjs.Ease.quadInOut).to({skewX:-29.9991,skewY:150.0009,x:681.45,y:116.1},5,cjs.Ease.quadInOut).to({skewX:0,skewY:180,x:700.55,y:125.95},5,cjs.Ease.quadInOut).to({skewX:29.9991,skewY:209.9991,x:719.8,y:113.15},5,cjs.Ease.quadInOut).to({skewX:0,skewY:180,x:738.9,y:125.95},5,cjs.Ease.quadInOut).to({skewX:-25.1948,skewY:154.8052,x:758.1,y:111.1},5,cjs.Ease.quadInOut).to({skewX:0,skewY:180,x:777.2,y:125.9},5,cjs.Ease.quadInOut).to({skewX:-21.981,skewY:158.019,x:796.35,y:112},5,cjs.Ease.quadInOut).to({skewX:0,skewY:180,x:815.4,y:125.75},5,cjs.Ease.quadInOut).wait(1));
-
 	// Head
 	this.minecraft_chicken_head = new lib.MinecraftChickenHead("single",0);
 	this.minecraft_chicken_head.name = "minecraft_chicken_head";
@@ -5483,15 +5476,15 @@ lib.properties = {
 	color: "#002020",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Bitmap69.png?1639313408168", id:"Bitmap69"},
-		{src:"images/Bitmap70.png?1639313408168", id:"Bitmap70"},
-		{src:"images/Bitmap71.png?1639313408168", id:"Bitmap71"},
-		{src:"images/crown_hat.png?1639313408168", id:"crown_hat"},
-		{src:"images/Purple_Cape.png?1639313408168", id:"Purple_Cape"},
-		{src:"images/purple_spiked_glove.png?1639313408168", id:"purple_spiked_glove"},
-		{src:"images/purple_spiked_shoe.png?1639313408168", id:"purple_spiked_shoe"},
-		{src:"images/Red_Cape.png?1639313408168", id:"Red_Cape"},
-		{src:"images/top_hat.png?1639313408168", id:"top_hat"}
+		{src:"images/Bitmap69.png?1639313484673", id:"Bitmap69"},
+		{src:"images/Bitmap70.png?1639313484673", id:"Bitmap70"},
+		{src:"images/Bitmap71.png?1639313484673", id:"Bitmap71"},
+		{src:"images/crown_hat.png?1639313484673", id:"crown_hat"},
+		{src:"images/Purple_Cape.png?1639313484673", id:"Purple_Cape"},
+		{src:"images/purple_spiked_glove.png?1639313484673", id:"purple_spiked_glove"},
+		{src:"images/purple_spiked_shoe.png?1639313484673", id:"purple_spiked_shoe"},
+		{src:"images/Red_Cape.png?1639313484673", id:"Red_Cape"},
+		{src:"images/top_hat.png?1639313484673", id:"top_hat"}
 	],
 	preloads: []
 };
