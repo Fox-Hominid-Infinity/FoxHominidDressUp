@@ -5802,15 +5802,15 @@ lib.properties = {
 	color: "#002020",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Bitmap69.png?1639311481527", id:"Bitmap69"},
-		{src:"images/Bitmap70.png?1639311481527", id:"Bitmap70"},
-		{src:"images/Bitmap71.png?1639311481527", id:"Bitmap71"},
-		{src:"images/crown_hat.png?1639311481527", id:"crown_hat"},
-		{src:"images/Purple_Cape.png?1639311481527", id:"Purple_Cape"},
-		{src:"images/purple_spiked_glove.png?1639311481527", id:"purple_spiked_glove"},
-		{src:"images/purple_spiked_shoe.png?1639311481527", id:"purple_spiked_shoe"},
-		{src:"images/Red_Cape.png?1639311481527", id:"Red_Cape"},
-		{src:"images/top_hat.png?1639311481527", id:"top_hat"}
+		{src:"images/Bitmap69.png?1639312729111", id:"Bitmap69"},
+		{src:"images/Bitmap70.png?1639312729111", id:"Bitmap70"},
+		{src:"images/Bitmap71.png?1639312729111", id:"Bitmap71"},
+		{src:"images/crown_hat.png?1639312729112", id:"crown_hat"},
+		{src:"images/Purple_Cape.png?1639312729112", id:"Purple_Cape"},
+		{src:"images/purple_spiked_glove.png?1639312729112", id:"purple_spiked_glove"},
+		{src:"images/purple_spiked_shoe.png?1639312729112", id:"purple_spiked_shoe"},
+		{src:"images/Red_Cape.png?1639312729112", id:"Red_Cape"},
+		{src:"images/top_hat.png?1639312729112", id:"top_hat"}
 	],
 	preloads: []
 };
