@@ -25,24 +25,6 @@ lib.ssMetadata = [];
 
 
 
-(lib.Bitmap69 = function() {
-	this.initialize(img.Bitmap69);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,80,60);
-
-
-(lib.Bitmap70 = function() {
-	this.initialize(img.Bitmap70);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,40,60);
-
-
-(lib.Bitmap71 = function() {
-	this.initialize(img.Bitmap71);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,30,60);
-
-
 (lib.crown_hat = function() {
 	this.initialize(img.crown_hat);
 }).prototype = p = new cjs.Bitmap();
@@ -3898,15 +3880,9 @@ if (reversed == null) { reversed = false; }
 
 	this.timeline.addTween(cjs.Tween.get(this.minecraft_chicken_cape).wait(1));
 
-	// Layer_1
-	this.instance = new lib.Bitmap69();
-	this.instance.setTransform(-40,-30);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
-
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.Symbol6copy, new cjs.Rectangle(-40,-30,80,60), null);
+}).prototype = getMCSymbolPrototype(lib.Symbol6copy, new cjs.Rectangle(0,0,0,0), null);
 
 
 (lib.Symbol2 = function(mode,startPosition,loop,reversed) {
@@ -4076,12 +4052,6 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
-	// Layer_1
-	this.instance = new lib.Bitmap71();
-	this.instance.setTransform(-25,-50);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({_off:true},1).wait(274));
-
 	// Layer_2
 	this.shape = new cjs.Shape();
 	this.shape.graphics.f("#967234").s().p("AhjAyIAAhjIDHAAIAABjg");
@@ -4111,25 +4081,25 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.minecraft_chicken_hat).to({_off:true},1).wait(66).to({_off:false},0).wait(208));
 
 	// Scared
-	this.instance_1 = new lib.Tween48("synched",0);
-	this.instance_1.setTransform(13.05,51.35,0.6622,0.6622);
-	this.instance_1._off = true;
+	this.instance = new lib.Tween48("synched",0);
+	this.instance.setTransform(13.05,51.35,0.6622,0.6622);
+	this.instance._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(190).to({_off:false},0).to({regX:0.1,regY:0.1,scaleX:1.029,scaleY:1.029,x:13.15,y:51.4},4).to({startPosition:0},14).to({regX:0,regY:0,scaleX:0.6622,scaleY:0.6622,x:13.05,y:51.35},5).wait(16).to({startPosition:0},0).to({regX:0.1,regY:0.1,scaleX:1.029,scaleY:1.029,x:13.15,y:51.4},4).to({_off:true},16).wait(26));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(190).to({_off:false},0).to({regX:0.1,regY:0.1,scaleX:1.029,scaleY:1.029,x:13.15,y:51.4},4).to({startPosition:0},14).to({regX:0,regY:0,scaleX:0.6622,scaleY:0.6622,x:13.05,y:51.35},5).wait(16).to({startPosition:0},0).to({regX:0.1,regY:0.1,scaleX:1.029,scaleY:1.029,x:13.15,y:51.4},4).to({_off:true},16).wait(26));
 
 	// Right_Rage
-	this.instance_2 = new lib.Tween10copy3("synched",0);
-	this.instance_2.setTransform(25,52.9,0.5847,0.3423,0,-19.0108,173.904,-0.2,0.4);
-	this.instance_2._off = true;
+	this.instance_1 = new lib.Tween10copy3("synched",0);
+	this.instance_1.setTransform(25,52.9,0.5847,0.3423,0,-19.0108,173.904,-0.2,0.4);
+	this.instance_1._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(79).to({_off:false},0).to({regX:-0.6,regY:0.2,scaleX:1.0427,scaleY:1.1851,skewX:0,skewY:179.9992,x:26.45,y:50.7},5).wait(15).to({startPosition:0},0).to({regX:-0.2,regY:0.4,scaleX:0.5847,scaleY:0.3423,skewX:-19.0108,skewY:173.904,x:25,y:52.9},5).wait(56).to({startPosition:0},0).to({regX:-0.6,regY:0.2,scaleX:1.0427,scaleY:1.1851,skewX:0,skewY:179.9992,x:26.45,y:50.7},4).wait(15).to({startPosition:0},0).to({regX:-0.2,regY:0.4,scaleX:0.5847,scaleY:0.3423,skewX:-19.0108,skewY:173.904,x:25,y:52.9},5).wait(6).to({startPosition:0},0).to({regX:-0.6,regY:0.2,scaleX:1.0427,scaleY:1.1851,skewX:0,skewY:179.9992,x:26.45,y:50.7},4).wait(14).to({startPosition:0},0).to({regX:-0.2,regY:0.4,scaleX:0.5847,scaleY:0.3423,skewX:-19.0108,skewY:173.904,x:25,y:52.9},5).wait(6).to({startPosition:0},0).to({regX:-0.6,regY:0.2,scaleX:1.0427,scaleY:1.1851,skewX:0,skewY:179.9992,x:26.45,y:50.7},4).to({_off:true},26).wait(20).to({_off:false},0).to({regX:-0.2,regY:0.4,scaleX:0.5847,scaleY:0.3423,skewX:-19.0108,skewY:173.904,x:25,y:52.9},5).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(79).to({_off:false},0).to({regX:-0.6,regY:0.2,scaleX:1.0427,scaleY:1.1851,skewX:0,skewY:179.9992,x:26.45,y:50.7},5).wait(15).to({startPosition:0},0).to({regX:-0.2,regY:0.4,scaleX:0.5847,scaleY:0.3423,skewX:-19.0108,skewY:173.904,x:25,y:52.9},5).wait(56).to({startPosition:0},0).to({regX:-0.6,regY:0.2,scaleX:1.0427,scaleY:1.1851,skewX:0,skewY:179.9992,x:26.45,y:50.7},4).wait(15).to({startPosition:0},0).to({regX:-0.2,regY:0.4,scaleX:0.5847,scaleY:0.3423,skewX:-19.0108,skewY:173.904,x:25,y:52.9},5).wait(6).to({startPosition:0},0).to({regX:-0.6,regY:0.2,scaleX:1.0427,scaleY:1.1851,skewX:0,skewY:179.9992,x:26.45,y:50.7},4).wait(14).to({startPosition:0},0).to({regX:-0.2,regY:0.4,scaleX:0.5847,scaleY:0.3423,skewX:-19.0108,skewY:173.904,x:25,y:52.9},5).wait(6).to({startPosition:0},0).to({regX:-0.6,regY:0.2,scaleX:1.0427,scaleY:1.1851,skewX:0,skewY:179.9992,x:26.45,y:50.7},4).to({_off:true},26).wait(20).to({_off:false},0).to({regX:-0.2,regY:0.4,scaleX:0.5847,scaleY:0.3423,skewX:-19.0108,skewY:173.904,x:25,y:52.9},5).wait(1));
 
 	// Left_Rage
-	this.instance_3 = new lib.Tween10copy3("synched",0);
-	this.instance_3.setTransform(2.35,52.3,0.4994,0.5676,0,0,0,-0.1,0.5);
-	this.instance_3._off = true;
+	this.instance_2 = new lib.Tween10copy3("synched",0);
+	this.instance_2.setTransform(2.35,52.3,0.4994,0.5676,0,0,0,-0.1,0.5);
+	this.instance_2._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(79).to({_off:false},0).to({regX:-0.4,regY:0.2,scaleX:1.0427,scaleY:1.1851,x:0.9,y:50.7},5).wait(15).to({startPosition:0},0).to({regX:-0.1,regY:0.5,scaleX:0.4994,scaleY:0.5676,x:2.35,y:52.3},5).wait(56).to({startPosition:0},0).to({regX:-0.4,regY:0.2,scaleX:1.0427,scaleY:1.1851,x:0.9,y:50.7},4).wait(15).to({startPosition:0},0).to({regX:-0.1,regY:0.5,scaleX:0.4994,scaleY:0.5676,x:2.35,y:52.3},5).wait(6).to({startPosition:0},0).to({regX:-0.4,regY:0.2,scaleX:1.0427,scaleY:1.1851,x:0.9,y:50.7},4).wait(14).to({startPosition:0},0).to({regX:-0.1,regY:0.5,scaleX:0.4994,scaleY:0.5676,x:2.35,y:52.3},5).wait(6).to({startPosition:0},0).to({regX:-0.4,regY:0.2,scaleX:1.0427,scaleY:1.1851,x:0.9,y:50.7},4).to({_off:true},26).wait(20).to({_off:false},0).to({regX:-0.1,regY:0.5,scaleX:0.4994,scaleY:0.5676,x:2.35,y:52.3},5).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(79).to({_off:false},0).to({regX:-0.4,regY:0.2,scaleX:1.0427,scaleY:1.1851,x:0.9,y:50.7},5).wait(15).to({startPosition:0},0).to({regX:-0.1,regY:0.5,scaleX:0.4994,scaleY:0.5676,x:2.35,y:52.3},5).wait(56).to({startPosition:0},0).to({regX:-0.4,regY:0.2,scaleX:1.0427,scaleY:1.1851,x:0.9,y:50.7},4).wait(15).to({startPosition:0},0).to({regX:-0.1,regY:0.5,scaleX:0.4994,scaleY:0.5676,x:2.35,y:52.3},5).wait(6).to({startPosition:0},0).to({regX:-0.4,regY:0.2,scaleX:1.0427,scaleY:1.1851,x:0.9,y:50.7},4).wait(14).to({startPosition:0},0).to({regX:-0.1,regY:0.5,scaleX:0.4994,scaleY:0.5676,x:2.35,y:52.3},5).wait(6).to({startPosition:0},0).to({regX:-0.4,regY:0.2,scaleX:1.0427,scaleY:1.1851,x:0.9,y:50.7},4).to({_off:true},26).wait(20).to({_off:false},0).to({regX:-0.1,regY:0.5,scaleX:0.4994,scaleY:0.5676,x:2.35,y:52.3},5).wait(1));
 
 	// Layer_2
 	this.shape_3 = new cjs.Shape();
@@ -4365,7 +4335,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-57.2,-50,92,138.6);
+p.nominalBounds = new cjs.Rectangle(-57.2,-30,92,118.6);
 
 
 (lib.MinecraftChickenArm = function(mode,startPosition,loop,reversed) {
@@ -4386,15 +4356,9 @@ if (reversed == null) { reversed = false; }
 
 	this.timeline.addTween(cjs.Tween.get(this.all_hand_character).wait(1));
 
-	// Layer_1
-	this.instance = new lib.Bitmap70();
-	this.instance.setTransform(-20,0);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
-
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.MinecraftChickenArm, new cjs.Rectangle(-20,0,40,60), null);
+}).prototype = getMCSymbolPrototype(lib.MinecraftChickenArm, new cjs.Rectangle(0,0,0,0), null);
 
 
 (lib.HominidHead = function(mode,startPosition,loop,reversed) {
@@ -5165,7 +5129,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-10.1,-101.6,895.9,661.7);
+p.nominalBounds = new cjs.Rectangle(26.4,-101.6,859.4,661.7);
 
 
 (lib.Character = function(mode,startPosition,loop,reversed) {
@@ -5802,15 +5766,12 @@ lib.properties = {
 	color: "#002020",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Bitmap69.png?1639312729111", id:"Bitmap69"},
-		{src:"images/Bitmap70.png?1639312729111", id:"Bitmap70"},
-		{src:"images/Bitmap71.png?1639312729111", id:"Bitmap71"},
-		{src:"images/crown_hat.png?1639312729112", id:"crown_hat"},
-		{src:"images/Purple_Cape.png?1639312729112", id:"Purple_Cape"},
-		{src:"images/purple_spiked_glove.png?1639312729112", id:"purple_spiked_glove"},
-		{src:"images/purple_spiked_shoe.png?1639312729112", id:"purple_spiked_shoe"},
-		{src:"images/Red_Cape.png?1639312729112", id:"Red_Cape"},
-		{src:"images/top_hat.png?1639312729112", id:"top_hat"}
+		{src:"images/crown_hat.png?1639312957586", id:"crown_hat"},
+		{src:"images/Purple_Cape.png?1639312957586", id:"Purple_Cape"},
+		{src:"images/purple_spiked_glove.png?1639312957586", id:"purple_spiked_glove"},
+		{src:"images/purple_spiked_shoe.png?1639312957586", id:"purple_spiked_shoe"},
+		{src:"images/Red_Cape.png?1639312957586", id:"Red_Cape"},
+		{src:"images/top_hat.png?1639312957586", id:"top_hat"}
 	],
 	preloads: []
 };
