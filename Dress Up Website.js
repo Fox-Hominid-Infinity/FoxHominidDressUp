@@ -43,6 +43,12 @@ p.nominalBounds = new cjs.Rectangle(0,0,40,60);
 p.nominalBounds = new cjs.Rectangle(0,0,30,60);
 
 
+(lib.crown_hat = function() {
+	this.initialize(img.crown_hat);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,128,128);
+
+
 (lib.Purple_Cape = function() {
 	this.initialize(img.Purple_Cape);
 }).prototype = p = new cjs.Bitmap();
@@ -55,8 +61,20 @@ p.nominalBounds = new cjs.Rectangle(0,0,128,128);
 p.nominalBounds = new cjs.Rectangle(0,0,128,128);
 
 
+(lib.purple_spiked_shoe = function() {
+	this.initialize(img.purple_spiked_shoe);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,128,128);
+
+
 (lib.Red_Cape = function() {
 	this.initialize(img.Red_Cape);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,128,128);
+
+
+(lib.top_hat = function() {
+	this.initialize(img.top_hat);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,128,128);// helper functions:
 
@@ -1998,24 +2016,27 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
-	this.isSingleFrame = false;
 	// timeline functions:
 	this.frame_0 = function() {
-		if(this.isSingleFrame) {
-			return;
-		}
-		if(this.totalFrames == 1) {
-			this.isSingleFrame = true;
-		}
 		this.stop()
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(3));
+
+	// Layer_1
+	this.instance = new lib.crown_hat();
+	this.instance.setTransform(-88.5,-150.4,1.4,1.4);
+
+	this.instance_1 = new lib.top_hat();
+	this.instance_1.setTransform(-113.1,-193.15,1.7685,1.7685);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance}]},1).to({state:[{t:this.instance_1}]},1).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.MinecraftChickenHat, new cjs.Rectangle(0,0,0,0), null);
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-113.1,-193.1,226.39999999999998,226.3);
 
 
 (lib.MinecraftChickenCape = function(mode,startPosition,loop,reversed) {
@@ -3571,24 +3592,25 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
-	this.isSingleFrame = false;
 	// timeline functions:
 	this.frame_0 = function() {
-		if(this.isSingleFrame) {
-			return;
-		}
-		if(this.totalFrames == 1) {
-			this.isSingleFrame = true;
-		}
 		this.stop()
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(2));
+
+	// Layer_1
+	this.instance = new lib.purple_spiked_shoe();
+	this.instance.setTransform(30.95,-112.5,1,1,0,0,180);
+	this.instance._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({_off:false},0).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.AllCharacterShoeMinecraft, new cjs.Rectangle(0,0,0,0), null);
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-97,-112.5,128,128);
 
 
 (lib.AllCharacterShoe = function(mode,startPosition,loop,reversed) {
@@ -5464,12 +5486,15 @@ lib.properties = {
 	color: "#002020",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Bitmap69.png?1639314508594", id:"Bitmap69"},
-		{src:"images/Bitmap70.png?1639314508594", id:"Bitmap70"},
-		{src:"images/Bitmap71.png?1639314508594", id:"Bitmap71"},
-		{src:"images/Purple_Cape.png?1639314508594", id:"Purple_Cape"},
-		{src:"images/purple_spiked_glove.png?1639314508594", id:"purple_spiked_glove"},
-		{src:"images/Red_Cape.png?1639314508594", id:"Red_Cape"}
+		{src:"images/Bitmap69.png?1639314674070", id:"Bitmap69"},
+		{src:"images/Bitmap70.png?1639314674070", id:"Bitmap70"},
+		{src:"images/Bitmap71.png?1639314674070", id:"Bitmap71"},
+		{src:"images/crown_hat.png?1639314674070", id:"crown_hat"},
+		{src:"images/Purple_Cape.png?1639314674070", id:"Purple_Cape"},
+		{src:"images/purple_spiked_glove.png?1639314674070", id:"purple_spiked_glove"},
+		{src:"images/purple_spiked_shoe.png?1639314674070", id:"purple_spiked_shoe"},
+		{src:"images/Red_Cape.png?1639314674070", id:"Red_Cape"},
+		{src:"images/top_hat.png?1639314674070", id:"top_hat"}
 	],
 	preloads: []
 };
