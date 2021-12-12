@@ -49,6 +49,12 @@ p.nominalBounds = new cjs.Rectangle(0,0,30,60);
 p.nominalBounds = new cjs.Rectangle(0,0,128,128);
 
 
+(lib.purple_spiked_glove = function() {
+	this.initialize(img.purple_spiked_glove);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,128,128);
+
+
 (lib.Red_Cape = function() {
 	this.initialize(img.Red_Cape);
 }).prototype = p = new cjs.Bitmap();
@@ -3473,24 +3479,25 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
-	this.isSingleFrame = false;
 	// timeline functions:
 	this.frame_0 = function() {
-		if(this.isSingleFrame) {
-			return;
-		}
-		if(this.totalFrames == 1) {
-			this.isSingleFrame = true;
-		}
 		this.stop()
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(2));
+
+	// Layer_1
+	this.instance = new lib.purple_spiked_glove();
+	this.instance.setTransform(-82.25,30.45,1.3586,1.3586,-90);
+	this.instance._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({_off:false},0).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.AllHandCharacterMinecraft, new cjs.Rectangle(0,0,0,0), null);
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-82.2,-143.4,173.9,173.9);
 
 
 (lib.AllHandCharacter = function(mode,startPosition,loop,reversed) {
@@ -5457,11 +5464,12 @@ lib.properties = {
 	color: "#002020",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Bitmap69.png?1639314299983", id:"Bitmap69"},
-		{src:"images/Bitmap70.png?1639314299983", id:"Bitmap70"},
-		{src:"images/Bitmap71.png?1639314299983", id:"Bitmap71"},
-		{src:"images/Purple_Cape.png?1639314299983", id:"Purple_Cape"},
-		{src:"images/Red_Cape.png?1639314299983", id:"Red_Cape"}
+		{src:"images/Bitmap69.png?1639314508594", id:"Bitmap69"},
+		{src:"images/Bitmap70.png?1639314508594", id:"Bitmap70"},
+		{src:"images/Bitmap71.png?1639314508594", id:"Bitmap71"},
+		{src:"images/Purple_Cape.png?1639314508594", id:"Purple_Cape"},
+		{src:"images/purple_spiked_glove.png?1639314508594", id:"purple_spiked_glove"},
+		{src:"images/Red_Cape.png?1639314508594", id:"Red_Cape"}
 	],
 	preloads: []
 };
