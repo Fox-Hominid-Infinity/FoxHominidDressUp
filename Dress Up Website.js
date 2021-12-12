@@ -25,20 +25,20 @@ lib.ssMetadata = [];
 
 
 
-(lib.Bitmap69 = function() {
-	this.initialize(img.Bitmap69);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,80,60);
-
-
-(lib.Bitmap70 = function() {
-	this.initialize(img.Bitmap70);
+(lib.chickenarmtexture = function() {
+	this.initialize(img.chickenarmtexture);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,40,60);
 
 
-(lib.Bitmap71 = function() {
-	this.initialize(img.Bitmap71);
+(lib.chickenbodytexture = function() {
+	this.initialize(img.chickenbodytexture);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,80,60);
+
+
+(lib.chickenheadtexture = function() {
+	this.initialize(img.chickenheadtexture);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,30,60);
 
@@ -3835,7 +3835,7 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.minecraft_chicken_cape).wait(1));
 
 	// Layer_1
-	this.instance = new lib.Bitmap69();
+	this.instance = new lib.chickenbodytexture();
 	this.instance.setTransform(-40,-30);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
@@ -4013,7 +4013,7 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Layer_1
-	this.instance = new lib.Bitmap71();
+	this.instance = new lib.chickenheadtexture();
 	this.instance.setTransform(-25,-50);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
@@ -4071,7 +4071,7 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.all_hand_character).wait(1));
 
 	// Layer_1
-	this.instance = new lib.Bitmap70();
+	this.instance = new lib.chickenarmtexture();
 	this.instance.setTransform(-20,0);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
@@ -5486,15 +5486,15 @@ lib.properties = {
 	color: "#002020",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Bitmap69.png?1639314674070", id:"Bitmap69"},
-		{src:"images/Bitmap70.png?1639314674070", id:"Bitmap70"},
-		{src:"images/Bitmap71.png?1639314674070", id:"Bitmap71"},
-		{src:"images/crown_hat.png?1639314674070", id:"crown_hat"},
-		{src:"images/Purple_Cape.png?1639314674070", id:"Purple_Cape"},
-		{src:"images/purple_spiked_glove.png?1639314674070", id:"purple_spiked_glove"},
-		{src:"images/purple_spiked_shoe.png?1639314674070", id:"purple_spiked_shoe"},
-		{src:"images/Red_Cape.png?1639314674070", id:"Red_Cape"},
-		{src:"images/top_hat.png?1639314674070", id:"top_hat"}
+		{src:"images/chickenarmtexture.png?1639314896060", id:"chickenarmtexture"},
+		{src:"images/chickenbodytexture.png?1639314896060", id:"chickenbodytexture"},
+		{src:"images/chickenheadtexture.png?1639314896060", id:"chickenheadtexture"},
+		{src:"images/crown_hat.png?1639314896060", id:"crown_hat"},
+		{src:"images/Purple_Cape.png?1639314896060", id:"Purple_Cape"},
+		{src:"images/purple_spiked_glove.png?1639314896060", id:"purple_spiked_glove"},
+		{src:"images/purple_spiked_shoe.png?1639314896060", id:"purple_spiked_shoe"},
+		{src:"images/Red_Cape.png?1639314896060", id:"Red_Cape"},
+		{src:"images/top_hat.png?1639314896060", id:"top_hat"}
 	],
 	preloads: []
 };
