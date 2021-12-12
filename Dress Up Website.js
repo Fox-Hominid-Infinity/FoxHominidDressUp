@@ -3835,10 +3835,10 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.minecraft_chicken_cape).wait(1));
 
 	// Layer_1
-	this.instance = new lib.chickenbodytexture();
-	this.instance.setTransform(-40,-30);
+	this.shape = new cjs.Shape();
+	this.shape.graphics.bf(img.chickenbodytexture, null, new cjs.Matrix2D(1,0,0,1,-40,-30)).s().p("AmPEsIAApXIMfAAIAAJXg");
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
 
 	this._renderFirstFrame();
 
@@ -4013,31 +4013,32 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Layer_1
-	this.instance = new lib.chickenheadtexture();
-	this.instance.setTransform(-25,-50);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
-
-	// Layer_2
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#967234").s().p("AhjAyIAAhjIDHAAIAABjg");
-	this.shape.setTransform(-35,-15);
+	this.shape.graphics.bf(img.chickenheadtexture, null, new cjs.Matrix2D(1,0,0,1,-15,-30)).s().p("AiVEsIAApXIErAAIAAJXg");
+	this.shape.setTransform(-10,-20);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
 
-	// Layer_3
+	// Layer_2
 	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("#C19343").s().p("AhjhbIDHAAIAABjIgJAEIi+BQg");
-	this.shape_1.setTransform(-35,-20.8);
+	this.shape_1.graphics.f("#967234").s().p("AhjAyIAAhjIDHAAIAABjg");
+	this.shape_1.setTransform(-35,-15);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape_1).wait(1));
 
-	// Layer_4
+	// Layer_3
 	this.shape_2 = new cjs.Shape();
-	this.shape_2.graphics.f("#FF0000").s().p("AgxBkIAAjHIBjAAIAADHg");
-	this.shape_2.setTransform(-30,0);
+	this.shape_2.graphics.f("#C19343").s().p("AhjhbIDHAAIAABjIgJAEIi+BQg");
+	this.shape_2.setTransform(-35,-20.8);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape_2).wait(1));
+
+	// Layer_4
+	this.shape_3 = new cjs.Shape();
+	this.shape_3.graphics.f("#FF0000").s().p("AgxBkIAAjHIBjAAIAADHg");
+	this.shape_3.setTransform(-30,0);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape_3).wait(1));
 
 	// Hat
 	this.minecraft_chicken_hat = new lib.MinecraftChickenHat();
@@ -4071,10 +4072,11 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.all_hand_character).wait(1));
 
 	// Layer_1
-	this.instance = new lib.chickenarmtexture();
-	this.instance.setTransform(-20,0);
+	this.shape = new cjs.Shape();
+	this.shape.graphics.bf(img.chickenarmtexture, null, new cjs.Matrix2D(1,0,0,1,-20,-30)).s().p("AjHEsIAApXIGPAAIAAJXg");
+	this.shape.setTransform(0,30);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
 
 	this._renderFirstFrame();
 
@@ -5486,15 +5488,15 @@ lib.properties = {
 	color: "#002020",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/chickenarmtexture.png?1639314896060", id:"chickenarmtexture"},
-		{src:"images/chickenbodytexture.png?1639314896060", id:"chickenbodytexture"},
-		{src:"images/chickenheadtexture.png?1639314896060", id:"chickenheadtexture"},
-		{src:"images/crown_hat.png?1639314896060", id:"crown_hat"},
-		{src:"images/Purple_Cape.png?1639314896060", id:"Purple_Cape"},
-		{src:"images/purple_spiked_glove.png?1639314896060", id:"purple_spiked_glove"},
-		{src:"images/purple_spiked_shoe.png?1639314896060", id:"purple_spiked_shoe"},
-		{src:"images/Red_Cape.png?1639314896060", id:"Red_Cape"},
-		{src:"images/top_hat.png?1639314896060", id:"top_hat"}
+		{src:"images/chickenarmtexture.png?1639315060647", id:"chickenarmtexture"},
+		{src:"images/chickenbodytexture.png?1639315060647", id:"chickenbodytexture"},
+		{src:"images/chickenheadtexture.png?1639315060647", id:"chickenheadtexture"},
+		{src:"images/crown_hat.png?1639315060647", id:"crown_hat"},
+		{src:"images/Purple_Cape.png?1639315060647", id:"Purple_Cape"},
+		{src:"images/purple_spiked_glove.png?1639315060647", id:"purple_spiked_glove"},
+		{src:"images/purple_spiked_shoe.png?1639315060647", id:"purple_spiked_shoe"},
+		{src:"images/Red_Cape.png?1639315060647", id:"Red_Cape"},
+		{src:"images/top_hat.png?1639315060647", id:"top_hat"}
 	],
 	preloads: []
 };
