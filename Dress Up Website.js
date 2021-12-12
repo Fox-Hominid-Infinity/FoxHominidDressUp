@@ -43,38 +43,14 @@ p.nominalBounds = new cjs.Rectangle(0,0,40,60);
 p.nominalBounds = new cjs.Rectangle(0,0,30,60);
 
 
-(lib.crown_hat = function() {
-	this.initialize(img.crown_hat);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,128,128);
-
-
 (lib.Purple_Cape = function() {
 	this.initialize(img.Purple_Cape);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,128,128);
 
 
-(lib.purple_spiked_glove = function() {
-	this.initialize(img.purple_spiked_glove);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,128,128);
-
-
-(lib.purple_spiked_shoe = function() {
-	this.initialize(img.purple_spiked_shoe);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,128,128);
-
-
 (lib.Red_Cape = function() {
 	this.initialize(img.Red_Cape);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,128,128);
-
-
-(lib.top_hat = function() {
-	this.initialize(img.top_hat);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,128,128);// helper functions:
 
@@ -2016,29 +1992,24 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
+	this.isSingleFrame = false;
 	// timeline functions:
 	this.frame_0 = function() {
+		if(this.isSingleFrame) {
+			return;
+		}
+		if(this.totalFrames == 1) {
+			this.isSingleFrame = true;
+		}
 		this.stop()
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(3));
-
-	// Layer_1
-	this.shape = new cjs.Shape();
-	this.shape.graphics.bf(img.crown_hat, null, new cjs.Matrix2D(1.5,0,0,1.5,-96,-96)).s().p("Au/PAIAA9/Id/AAIAAd/g");
-	this.shape.setTransform(-1,-69);
-
-	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.bf(img.top_hat, null, new cjs.Matrix2D(1.625,0,0,1.625,-104,-104)).s().p("AwPQQMAAAggfMAgfAAAMAAAAgfg");
-	this.shape_1.setTransform(-0.025,-69.025);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.shape}]},1).to({state:[{t:this.shape_1}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-104,-173,208,208);
+}).prototype = getMCSymbolPrototype(lib.MinecraftChickenHat, new cjs.Rectangle(0,0,0,0), null);
 
 
 (lib.MinecraftChickenCape = function(mode,startPosition,loop,reversed) {
@@ -3502,26 +3473,24 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
+	this.isSingleFrame = false;
 	// timeline functions:
 	this.frame_0 = function() {
+		if(this.isSingleFrame) {
+			return;
+		}
+		if(this.totalFrames == 1) {
+			this.isSingleFrame = true;
+		}
 		this.stop()
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(2));
-
-	// Layer_1
-	this.shape = new cjs.Shape();
-	this.shape.graphics.bf(img.purple_spiked_glove, null, new cjs.Matrix2D(0,-1.391,1.391,0,-89,61.7)).s().p("At5JpIAAzQIbzAAIAATQg");
-	this.shape.setTransform(3,-29.65);
-	this.shape._off = true;
-
-	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1).to({_off:false},0).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-86,-91.3,178,123.3);
+}).prototype = getMCSymbolPrototype(lib.AllHandCharacterMinecraft, new cjs.Rectangle(0,0,0,0), null);
 
 
 (lib.AllHandCharacter = function(mode,startPosition,loop,reversed) {
@@ -3595,26 +3564,24 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
+	this.isSingleFrame = false;
 	// timeline functions:
 	this.frame_0 = function() {
+		if(this.isSingleFrame) {
+			return;
+		}
+		if(this.totalFrames == 1) {
+			this.isSingleFrame = true;
+		}
 		this.stop()
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(2));
-
-	// Layer_1
-	this.shape = new cjs.Shape();
-	this.shape.graphics.bf(img.purple_spiked_shoe, null, new cjs.Matrix2D(-0.938,0,0,0.938,60.1,-93.1)).s().p("ApYEOIAAobISxAAIAAIbg");
-	this.shape.setTransform(-34.95,-17.875);
-	this.shape._off = true;
-
-	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1).to({_off:false},0).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-95,-44.8,120.1,53.9);
+}).prototype = getMCSymbolPrototype(lib.AllCharacterShoeMinecraft, new cjs.Rectangle(0,0,0,0), null);
 
 
 (lib.AllCharacterShoe = function(mode,startPosition,loop,reversed) {
@@ -3839,10 +3806,10 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.minecraft_chicken_cape).wait(1));
 
 	// Layer_1
-	this.shape = new cjs.Shape();
-	this.shape.graphics.bf(img.Bitmap69, null, new cjs.Matrix2D(1,0,0,1,-40,-30)).s().p("AmPEsIAApXIMfAAIAAJXg");
+	this.instance = new lib.Bitmap69();
+	this.instance.setTransform(-40,-30);
 
-	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 	this._renderFirstFrame();
 
@@ -3994,8 +3961,8 @@ if (reversed == null) { reversed = false; }
 
 	// Layer_1
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#E0CC69").s().p("AiVD6IAAnzIAOAAIAAHmIEdAAIAAANg");
-	this.shape.setTransform(-13.65,25.2,1,1,0,0,180);
+	this.shape.graphics.f("#E0CC69").s().p("AiVD6IAAgNIEeAAIAAnmIANAAIAAHzg");
+	this.shape.setTransform(-13.65,25.2);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
 
@@ -4017,32 +3984,31 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Layer_1
+	this.instance = new lib.Bitmap71();
+	this.instance.setTransform(-25,-50);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+	// Layer_2
 	this.shape = new cjs.Shape();
-	this.shape.graphics.bf(img.Bitmap71, null, new cjs.Matrix2D(1,0,0,1,-15,-30)).s().p("AiVEsIAApXIErAAIAAJXg");
-	this.shape.setTransform(-10,-20);
+	this.shape.graphics.f("#967234").s().p("AhjAyIAAhjIDHAAIAABjg");
+	this.shape.setTransform(-35,-15);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
 
-	// Layer_2
+	// Layer_3
 	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("#967234").s().p("AhjAyIAAhjIDHAAIAABjg");
-	this.shape_1.setTransform(-35,-15);
+	this.shape_1.graphics.f("#C19343").s().p("AhjhbIDHAAIAABjIgJAEIi+BQg");
+	this.shape_1.setTransform(-35,-20.8);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape_1).wait(1));
 
-	// Layer_3
+	// Layer_4
 	this.shape_2 = new cjs.Shape();
-	this.shape_2.graphics.f("#C19343").s().p("AhjhbIDHAAIAABjIgJAEIi+BQg");
-	this.shape_2.setTransform(-35,-20.8);
+	this.shape_2.graphics.f("#FF0000").s().p("AgxBkIAAjHIBjAAIAADHg");
+	this.shape_2.setTransform(-30,0);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape_2).wait(1));
-
-	// Layer_4
-	this.shape_3 = new cjs.Shape();
-	this.shape_3.graphics.f("#FF0000").s().p("AgxBkIAAjHIBjAAIAADHg");
-	this.shape_3.setTransform(-30,0);
-
-	this.timeline.addTween(cjs.Tween.get(this.shape_3).wait(1));
 
 	// Hat
 	this.minecraft_chicken_hat = new lib.MinecraftChickenHat();
@@ -4076,11 +4042,10 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.all_hand_character).wait(1));
 
 	// Layer_1
-	this.shape = new cjs.Shape();
-	this.shape.graphics.bf(img.Bitmap70, null, new cjs.Matrix2D(1,0,0,1,-20,-30)).s().p("AjHEsIAApXIGPAAIAAJXg");
-	this.shape.setTransform(0,30);
+	this.instance = new lib.Bitmap70();
+	this.instance.setTransform(-20,0);
 
-	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 	this._renderFirstFrame();
 
@@ -5492,15 +5457,11 @@ lib.properties = {
 	color: "#002020",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Bitmap69.png?1639314154994", id:"Bitmap69"},
-		{src:"images/Bitmap70.png?1639314154994", id:"Bitmap70"},
-		{src:"images/Bitmap71.png?1639314154994", id:"Bitmap71"},
-		{src:"images/crown_hat.png?1639314154994", id:"crown_hat"},
-		{src:"images/Purple_Cape.png?1639314154994", id:"Purple_Cape"},
-		{src:"images/purple_spiked_glove.png?1639314154994", id:"purple_spiked_glove"},
-		{src:"images/purple_spiked_shoe.png?1639314154994", id:"purple_spiked_shoe"},
-		{src:"images/Red_Cape.png?1639314154994", id:"Red_Cape"},
-		{src:"images/top_hat.png?1639314154994", id:"top_hat"}
+		{src:"images/Bitmap69.png?1639314299983", id:"Bitmap69"},
+		{src:"images/Bitmap70.png?1639314299983", id:"Bitmap70"},
+		{src:"images/Bitmap71.png?1639314299983", id:"Bitmap71"},
+		{src:"images/Purple_Cape.png?1639314299983", id:"Purple_Cape"},
+		{src:"images/Red_Cape.png?1639314299983", id:"Red_Cape"}
 	],
 	preloads: []
 };
