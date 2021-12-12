@@ -1508,6 +1508,46 @@ if (reversed == null) { reversed = false; }
 p.nominalBounds = new cjs.Rectangle(-52,-37.5,104,75);
 
 
+(lib.ShirtMinecraftChicken = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// timeline functions:
+	this.frame_0 = function() {
+		this.stop()
+	}
+
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(2));
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#00FFFF").s().p("ABEBVQgVgLgTgTQgSgSgSgXIgCADIgcAcQgQARgWAMQgWANgdABQgXgBgTgKQgSgLgLgUQgMgTAAgbQAAgaAMgTQALgUAUgKQATgLAZAAQAbAAAVAMQAVALAPAQQAQAQALAPIADADQANgTASgUQASgSAXgNQAYgMAcgBQAtABAaAZQAZAaAAAsQAAAbgLAXQgLAVgVANQgVAMgeABQgbgBgWgLgAA1g8QgdAVgaAnQAfAqAdAUQAeAVAfAAQAYAAASgMQASgLAJgSQAKgUAAgWQAAgWgJgTQgKgSgTgMQgSgLgbAAQggAAgeAWgAigg/QgRAJgKAQQgKAQAAAWQAAAiATAUQATAUAkAAQAVAAAUgLQAUgKAQgRQARgQANgUQgZgggbgUQgbgTgdgBQgTABgRAIg");
+	this.shape.setTransform(25.5438,55.4194,0.3026,1.4845,-90);
+
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f("#00FFFF").s().p("ABEBVQgVgLgTgTQgSgSgSgXIgCADIgcAcQgQARgWAMQgWANgdABQgXgBgTgKQgSgLgLgUQgMgTAAgbQAAgaAMgTQALgUAUgKQATgLAZAAQAbAAAVAMQAVALAPAQQAQAQALAPIADADQANgTASgUQASgSAXgNQAYgMAcgBQAtABAaAZQAZAaAAAsQAAAbgLAXQgLAVgVANQgVAMgeABQgbgBgWgLgAA1g8QgdAVgaAnQAfAqAdAUQAeAVAfAAQAYAAASgMQASgLAJgSQAKgUAAgWQAAgWgJgTQgKgSgTgMQgSgLgbAAQggAAgeAWgAigg/QgRAJgKAQQgKAQAAAWQAAAiATAUQATAUAkAAQAVAAAUgLQAUgKAQgRQARgQANgUQgZgggbgUQgbgTgdgBQgTABgRAIg");
+	this.shape_1.setTransform(25.5438,7.6694,0.3026,1.4845,-90);
+
+	this.shape_2 = new cjs.Shape();
+	this.shape_2.graphics.f("#8000FF").s().p("AkdEsIAApXII7AAIAAJXg");
+	this.shape_2.setTransform(27.5095,32.0099,0.9615,1.0667);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.shape_2},{t:this.shape_1},{t:this.shape}]},1).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,55,64);
+
+
 (lib.ShirtButtonGroup = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -1789,6 +1829,94 @@ if (reversed == null) { reversed = false; }
 p.nominalBounds = new cjs.Rectangle(-69.2,-60,138.5,120.1);
 
 
+(lib.PurpleInfinityShirtButton = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer 1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#00FFFF").s().p("ABEBVQgVgLgTgTQgSgSgSgXIgCADIgcAcQgQARgWAMQgWANgdABQgXgBgTgKQgSgLgLgUQgMgTAAgbQAAgaAMgTQALgUAUgKQATgLAZAAQAbAAAVAMQAVALAPAQQAQAQALAPIADADQANgTASgUQASgSAXgNQAYgMAcgBQAtABAaAZQAZAaAAAsQAAAbgLAXQgLAVgVANQgVAMgeABQgbgBgWgLgAA1g8QgdAVgaAnQAfAqAdAUQAeAVAfAAQAYAAASgMQASgLAJgSQAKgUAAgWQAAgWgJgTQgKgSgTgMQgSgLgbAAQggAAgeAWgAigg/QgRAJgKAQQgKAQAAAWQAAAiATAUQATAUAkAAQAVAAAUgLQAUgKAQgRQARgQANgUQgZgggbgUQgbgTgdgBQgTABgRAIg");
+	this.shape.setTransform(-0.725,-4.45);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	// Layer 1
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f().s("#510C96").ss(5,1,1).p("Ai7kbIF8AAQBYgOAyAhQAxAhAiBGICaDhIh6BDIjIkXQARBPAQBdQAgC8gCBOIpNAAQgIgnATjIQAJhjALhdIi4ExIiGhCQAXgjA0hRQAzhSAuhTQAuhSArgNQAqgOAhADQAhAFALABg");
+	this.shape_1.setTransform(-0.725,-5.9273);
+
+	this.shape_2 = new cjs.Shape();
+	this.shape_2.graphics.f("#8000FF").s().p("AkYEiQgIgnATjIQAJhjALhdIi4ExIiGhCQAXgjA0hRQAzhSAuhTQAuhSArgNQAqgOAhADQAhAFALABIF8AAQBYgOAyAhQAxAhAiBGICaDhIh6BDIjIkXQARBPAQBdQAgC8gCBOg");
+	this.shape_2.setTransform(-0.725,-5.9273);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_2},{t:this.shape_1}]}).wait(1));
+
+	// Layer_1
+	this.shape_3 = new cjs.Shape();
+	this.shape_3.graphics.f("#002020").s().p("AlZJYIlbpYIFbpXIKzAAIFbJXIlbJYg");
+	this.shape_3.setTransform(0.025,0.025);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape_3).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-69.2,-60,138.5,120.1);
+
+
+(lib.PurpleInfinityPantButton = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer 1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#00FFFF").s().p("AHmJcQiZhPiEiFQiFiEiDiiIgSAZQhNBWhzBzQhzB1icBYQieBbjLAEQijgCiHhNQiFhMhPiLQhPiLgDi8QADjBBPiLQBRiJCMhLQCLhJCxAAQC+ACCTBPQCVBOBuBwQBvBxBRBsIASAWQBjiLCCiEQCCiHCjhYQCkhZDKgEQFCAECzC1QCzC1ACE8QgCDIhNCdQhQCbiUBYQiUBbjSACQjBgCiahSgAF6mxQjSCai9ESQDiEqDQCUQDQCUDdgCQCsgDCAhPQB+hSBFiCQBHiFAAidQAAikhFiHQhHiFiChPQiFhOi6gCQjoACjRCZgAx1nFQh4A+hGBwQhJBzgCCfQAADyCHCQQCGCQEDAEQCWgCCLhLQCMhLB2h4QB2h3BdiKQixjqjAiMQjAiLjOgCQiJAAh1A+g");
+	this.shape.setTransform(21.5085,27.1749,0.0734,0.0734);
+
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f("#00FFFF").s().p("AHmJcQiZhPiEiFQiFiEiDiiIgSAZQhNBWhzBzQhzB1icBYQieBbjLAEQijgCiHhNQiFhMhPiLQhPiLgDi8QADjBBPiLQBRiJCMhLQCLhJCxAAQC+ACCTBPQCVBOBuBwQBvBxBRBsIASAWQBjiLCCiEQCCiHCjhYQCkhZDKgEQFCAECzC1QCzC1ACE8QgCDIhNCdQhQCbiUBYQiUBbjSACQjBgCiahSgAF6mxQjSCai9ESQDiEqDQCUQDQCUDdgCQCsgDCAhPQB+hSBFiCQBHiFAAidQAAikhFiHQhHiFiChPQiFhOi6gCQjoACjRCZgAx1nFQh4A+hGBwQhJBzgCCfQAADyCHCQQCGCQEDAEQCWgCCLhLQCMhLB2h4QB2h3BdiKQixjqjAiMQjAiLjOgCQiJAAh1A+g");
+	this.shape_1.setTransform(-23.4415,27.1749,0.0734,0.0734);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_1},{t:this.shape}]}).wait(1));
+
+	// Layer 1
+	this.shape_2 = new cjs.Shape();
+	this.shape_2.graphics.f().s("#510C96").ss(5,1,1).p("AlBmVIKIAAQBTFpgUHCIlEAAQAUkDhPkCQhCDGAGE/IlLAAQgjm0Bil3g");
+	this.shape_2.setTransform(-1.026,-0.475);
+
+	this.shape_3 = new cjs.Shape();
+	this.shape_3.graphics.f("#8000FF").s().p("ABCGWQAUkDhPkCQhCDGAGE/IlLAAQgjm0Bil3IKIAAQBTFpgUHCg");
+	this.shape_3.setTransform(-1.026,-0.475);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_3},{t:this.shape_2}]}).wait(1));
+
+	// Layer_1
+	this.shape_4 = new cjs.Shape();
+	this.shape_4.graphics.f("#002020").s().p("AlZJYIlbpYIFbpXIKzAAIFbJXIlbJYg");
+	this.shape_4.setTransform(0.025,0.025);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape_4).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-69.2,-60,138.5,120.1);
+
+
 (lib.PurpleCapeButton = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -1854,6 +1982,39 @@ if (reversed == null) { reversed = false; }
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(-69.2,-60,138.5,120.1);
+
+
+(lib.PantMinecraftChicken = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// timeline functions:
+	this.frame_0 = function() {
+		this.stop()
+	}
+
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(2));
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#8000FF").s().p("AkdEsIAApXII7AAIAAJXg");
+	this.shape.setTransform(35.3626,32.0099,0.4457,1.0667);
+	this.shape._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1).to({_off:false},0).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,48.1,64);
 
 
 (lib.PantButtonGroup = function(mode,startPosition,loop,reversed) {
@@ -4756,17 +4917,31 @@ if (reversed == null) { reversed = false; }
 
 	this.timeline.addTween(cjs.Tween.get(this.minecraft_chicken_cape).wait(1));
 
+	// Layer_3
+	this.pant_minecraft_chicken = new lib.PantMinecraftChicken();
+	this.pant_minecraft_chicken.name = "pant_minecraft_chicken";
+	this.pant_minecraft_chicken.setTransform(-36.1,0.2,1,1,0,0,0,27.5,32);
+
+	this.timeline.addTween(cjs.Tween.get(this.pant_minecraft_chicken).wait(1));
+
+	// Layer_4
+	this.shirt_minecraft_chicken = new lib.ShirtMinecraftChicken();
+	this.shirt_minecraft_chicken.name = "shirt_minecraft_chicken";
+	this.shirt_minecraft_chicken.setTransform(14.7,0.2,1,1,0,0,0,27.5,32);
+
+	this.timeline.addTween(cjs.Tween.get(this.shirt_minecraft_chicken).wait(1));
+
 	// Layer_1
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#C6C6C6").s().p("ACWEsIAAhkIBkAAIAABkgAiVEsIAAhkIBkAAIAABkgAD6DIIAAhkIBkAAIAABkgAgxDIIAAhkIhkAAIAAhkIBkAAIAAhjIBjAAIAABjIhjAAIAABkIBjAAIAABkgAgxDIgAldDIIAAhkIBkAAIAABkgACWBkIAAhkIBkAAIAABkgAD6AAIAAhjIBkAAIAABjgAD6AAgAldAAIAAhjIBkAAIAABjgACWhjIAAhkIBkAAIAABkgAiVhjIAAhkIBkAAIAABkgAD6jHIAAhkIBkAAIAABkgAgxjHIAAhkIBjAAIAABkgAgxjHgAldjHIAAhkIBkAAIAABkg");
+	this.shape.graphics.f("#C6C6C6").s().p("ACWEsIAAhkIBkAAIAAhkIBkAAIAABkIhkAAIAABkgAiVEsIAAhkIBkAAIAABkgAgxDIIAAhkIBjAAIAABkgAgxDIgAldDIIAAhkIBkAAIAABkgACWBkIAAhkIBkAAIAABkgAiVBkIAAhkIBkAAIAABkgAD6AAIAAhjIBkAAIAABjgAD6AAgAgxAAIAAhjIhkAAIAAhkIBkAAIAAhkIBjAAIAABkIhjAAIAABkIBjAAIAABjgAgxAAgAldAAIAAhjIBkAAIAABjgACWhjIAAhkIBkAAIAABkgAD6jHIAAhkIBkAAIAABkgAD6jHgAldjHIAAhkIBkAAIAABkg");
 	this.shape.setTransform(-5,0);
 
 	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("#E2E2E2").s().p("AD6EsIAAhkIBkAAIAABkgAgxEsIAAhkIBjAAIAABkgAldEsIAAhkIBkAAIAABkgAAyDIIAAhkIhjAAIAAhkIBjAAIAABkIBkAAIAABkgAj5DIIAAhkIBkAAIAABkgAD6BkIAAhkIBkAAIAABkgAldBkIAAhkIBkAAIAABkgAAyAAIAAhjIhjAAIAAhkIBjAAIAAhkIBkAAIAABkIhkAAIAABkIBkAAIAABjgAAyAAgAj5AAIAAhjIhkAAIAAhkIBkAAIAAhkIBkAAIAABkIhkAAIAABkIBkAAIAABjgAD6hjIAAhkIBkAAIAABkg");
+	this.shape_1.graphics.f("#E2E2E2").s().p("AD6EsIAAhkIBkAAIAABkgAgxEsIAAhkIBjAAIAABkgAldEsIAAhkIBkAAIAABkgAAyDIIAAhkIhjAAIAAhkIBjAAIAABkIBkAAIAABkgAj5DIIAAhkIhkAAIAAhkIBkAAIAABkIBkAAIAABkgAD6BkIAAhkIBkAAIAABkgAAyAAIAAhjIhjAAIAAhkIBjAAIAAhkIBkAAIAABkIhkAAIAABkIBkAAIAABjgAAyAAgAj5AAIAAhjIBkAAIAABjgAD6hjIAAhkIBkAAIAABkgAldhjIAAhkIBkAAIAABkgAj5jHIAAhkIBkAAIAABkg");
 	this.shape_1.setTransform(5,0);
 
 	this.shape_2 = new cjs.Shape();
-	this.shape_2.graphics.f("#D3D3D3").s().p("ADIEsIAAhkIBkAAIAABkgAhjEsIAAhkIBjAAIAABkgAmPEsIAAhkIBkAAIAABkgAEsDIIAAhkIhkAAIAAhkIBkAAIAABkIBkAAIAABkgAEsDIgAAADIIAAhkIBkAAIAABkgAAADIgAkrDIIAAhkIBkAAIAABkgAkrDIgAhjBkIAAhkIBjAAIAABkgAmPBkIAAhkIBkAAIAAhjIhkAAIAAhkIBkAAIAABkIBkAAIAABjIhkAAIAABkgAEsAAIAAhjIhkAAIAAhkIBkAAIAAhkIBkAAIAABkIhkAAIAABkIBkAAIAABjgAAAAAIAAhjIBkAAIAABjgAAAAAgAhjhjIAAhkIBjAAIAABkgAAAjHIAAhkIBkAAIAABkgAAAjHgAkrjHIAAhkIBkAAIAABkg");
+	this.shape_2.graphics.f("#D3D3D3").s().p("ADIEsIAAhkIBkAAIAABkgAhjEsIAAhkIBjAAIAABkgAmPEsIAAhkIBkAAIAABkgAEsDIIAAhkIBkAAIAABkgAEsDIgAAADIIAAhkIBkAAIAABkgAAADIgAkrDIIAAhkIhkAAIAAhkIBkAAIAABkIBkAAIAABkgAkrDIgADIBkIAAhkIBkAAIAABkgAhjBkIAAhkIBjAAIAABkgAEsAAIAAhjIhkAAIAAhkIBkAAIAAhkIBkAAIAABkIhkAAIAABkIBkAAIAABjgAEsAAgAAAAAIAAhjIBkAAIAABjgAkrAAIAAhjIhkAAIAAhkIBkAAIAABkIBkAAIAABjgAkrAAgAhjhjIAAhkIBjAAIAABkgAAAjHIAAhkIBkAAIAABkgAkrjHIAAhkIBkAAIAABkg");
 
 	this.shape_3 = new cjs.Shape();
 	this.shape_3.graphics.f("#CCCCCC").s().p("AmPEsIAApXIMfAAIAAJXg");
@@ -4921,6 +5096,13 @@ if (reversed == null) { reversed = false; }
 
 	this.timeline.addTween(cjs.Tween.get(this.all_feet_character).wait(1));
 
+	// Layer_3
+	this.pant_leg_minecraft_chicken = new lib.ShirtMinecraftChicken();
+	this.pant_leg_minecraft_chicken.name = "pant_leg_minecraft_chicken";
+	this.pant_leg_minecraft_chicken.setTransform(0,19.6,0.8344,0.1337,90,0,0,27.4,31.8);
+
+	this.timeline.addTween(cjs.Tween.get(this.pant_leg_minecraft_chicken).wait(1));
+
 	// Layer_1
 	this.shape = new cjs.Shape();
 	this.shape.graphics.f("#E0CC69").s().p("AiVD6IAAgNIEeAAIAAnmIANAAIAAHzg");
@@ -5009,6 +5191,13 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
+	// Layer_3
+	this.shirt_arm_minecraft_chicken = new lib.ShirtMinecraftChicken();
+	this.shirt_arm_minecraft_chicken.name = "shirt_arm_minecraft_chicken";
+	this.shirt_arm_minecraft_chicken.setTransform(0,18.4,0.7271,0.6998,-90,0,0,27.4,31.9);
+
+	this.timeline.addTween(cjs.Tween.get(this.shirt_arm_minecraft_chicken).wait(1));
+
 	// Layer_2
 	this.all_hand_character = new lib.AllHandCharacterMinecraft();
 	this.all_hand_character.name = "all_hand_character";
@@ -5018,15 +5207,15 @@ if (reversed == null) { reversed = false; }
 
 	// Layer_1
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#E2E2E2").s().p("AAAEsIAAhkIhjAAIAAhkIBjAAIAAhkIBkAAIAABkIhkAAIAABkIBkAAIAABkgAhjAAIAAhjIBjAAIAABjgAAAhjIAAhkIBkAAIAABkgAhjjHIAAhkIBjAAIAABkg");
+	this.shape.graphics.f("#E2E2E2").s().p("AAAEsIAAhkIBkAAIAABkgAhjDIIAAhkIBjAAIAAhkIBkAAIAABkIhkAAIAABkgAhjAAIAAhjIBjAAIAABjgAAAhjIAAhkIhjAAIAAhkIBjAAIAABkIBkAAIAABkg");
 	this.shape.setTransform(0,30);
 
 	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("#D3D3D3").s().p("ABkEsIAAhkIhkAAIAAhkIBkAAIAABkIBkAAIAABkgAjHEsIAAhkIBkAAIAABkgABkBkIAAhkIhkAAIAAhjIBkAAIAABjIBkAAIAABkgAjHBkIAAhkIBkAAIAABkgABkhjIAAhkIhkAAIAAhkIBkAAIAABkIBkAAIAABkgAjHhjIAAhkIBkAAIAABkg");
+	this.shape_1.graphics.f("#D3D3D3").s().p("ABkEsIAAhkIBkAAIAABkgAjHEsIAAhkIBkAAIAABkgAAADIIAAhkIBkAAIAAhkIhkAAIAAhjIBkAAIAAhkIhkAAIAAhkIBkAAIAABkIBkAAIAABkIhkAAIAABjIBkAAIAABkIhkAAIAABkgAjHBkIAAhkIBkAAIAABkgAjHhjIAAhkIBkAAIAABkg");
 	this.shape_1.setTransform(0,30);
 
 	this.shape_2 = new cjs.Shape();
-	this.shape_2.graphics.f("#C6C6C6").s().p("AhjEsIAAhkIhkAAIAAhkIBkAAIAABkIBjAAIAABkgABkDIIAAhkIBkAAIAABkgAhjBkIAAhkIBjAAIAABkgABkAAIAAhjIBkAAIAABjgAjHAAIAAhjIBkAAIAABjgAhjhjIAAhkIhkAAIAAhkIBkAAIAABkIBjAAIAABkgABkjHIAAhkIBkAAIAABkg");
+	this.shape_2.graphics.f("#C6C6C6").s().p("AhjEsIAAhkIhkAAIAAhkIBkAAIAABkIBjAAIAABkgABkDIIAAhkIBkAAIAABkgAhjBkIAAhkIhkAAIAAhjIBkAAIAABjIBjAAIAABkgAhjBkgABkAAIAAhjIBkAAIAABjgAhjhjIAAhkIhkAAIAAhkIBkAAIAABkIBjAAIAABkgABkjHIAAhkIBkAAIAABkg");
 	this.shape_2.setTransform(0,30);
 
 	this.shape_3 = new cjs.Shape();
@@ -5904,12 +6093,16 @@ if (reversed == null) { reversed = false; }
 		var CharacterCapeMinecraftChicken = 0
 		var CharacterGloveMinecraftChicken = 0
 		var CharacterShoeMinecraftChicken = 0
+		var CharacterPantMinecraftChicken = 0
+		var CharacterShirtMinecraftChicken = 0
 		
 		
 		this.purple_cape_button.visible = false
 		this.red_cape_button.visible = false
 		this.purple_spike_glove_button.visible = false
 		this.purple_spike_shoe_button.visible = false
+		this.purple_infinity_shirt_button.visible = false
+		this.purple_infinity_pant_button.visible = false
 		
 		
 		this.next_button.addEventListener("click", fl_MouseClickHandler.bind(this));
@@ -6023,6 +6216,14 @@ if (reversed == null) { reversed = false; }
 				this.character.minecraft_chicken.minecraft_chicken_arm_left.all_hand_character.gotoAndStop(CharacterGloveMinecraftChicken)
 				this.character.minecraft_chicken.minecraft_chicken_feet_right.all_feet_character.gotoAndStop(CharacterShoeMinecraftChicken)
 				this.character.minecraft_chicken.minecraft_chicken_feet_left.all_feet_character.gotoAndStop(CharacterShoeMinecraftChicken)
+				
+				this.character.minecraft_chicken.minecraft_chicken_arm_right.shirt_arm_minecraft_chicken.gotoAndStop(CharacterShirtMinecraftChicken)
+				this.character.minecraft_chicken.minecraft_chicken_arm_left.shirt_arm_minecraft_chicken.gotoAndStop(CharacterShirtMinecraftChicken)
+				this.character.minecraft_chicken.minecraft_chicken_body.shirt_minecraft_chicken.gotoAndStop(CharacterShirtMinecraftChicken)
+				
+				this.character.minecraft_chicken.minecraft_chicken_feet_right.pant_leg_minecraft_chicken.gotoAndStop(CharacterPantMinecraftChicken)
+				this.character.minecraft_chicken.minecraft_chicken_feet_left.pant_leg_minecraft_chicken.gotoAndStop(CharacterPantMinecraftChicken)
+				this.character.minecraft_chicken.minecraft_chicken_body.pant_minecraft_chicken.gotoAndStop(CharacterPantMinecraftChicken)
 				if (this.character.minecraft_chicken.currentFrame == 91) {
 					CharacterWaitingAnim = 1
 					CharacterNextBackAnim = 0
@@ -6065,6 +6266,8 @@ if (reversed == null) { reversed = false; }
 			localStorage.setItem('CharacterCapeMinecraftChickenThisSaved',JSON.stringify(CharacterCapeMinecraftChicken));
 			localStorage.setItem('CharacterGloveMinecraftChickenThisSaved',JSON.stringify(CharacterGloveMinecraftChicken));
 			localStorage.setItem('CharacterShoeMinecraftChickenThisSaved',JSON.stringify(CharacterShoeMinecraftChicken));
+			localStorage.setItem('CharacterShirtMinecraftChickenThisSaved',JSON.stringify(CharacterShirtMinecraftChicken));
+			localStorage.setItem('CharacterPantMinecraftChickenThisSaved',JSON.stringify(CharacterPantMinecraftChicken));
 		}
 		
 		CharacterHatFox = JSON.parse(localStorage.getItem("CharacterHatFoxThisSaved"));
@@ -6080,6 +6283,8 @@ if (reversed == null) { reversed = false; }
 		CharacterCapeMinecraftChicken = JSON.parse(localStorage.getItem("CharacterCapeMinecraftChickenThisSaved"));
 		CharacterGloveMinecraftChicken = JSON.parse(localStorage.getItem("CharacterGloveMinecraftChickenThisSaved"));
 		CharacterShoeMinecraftChicken = JSON.parse(localStorage.getItem("CharacterShoeMinecraftChickenThisSaved"));
+		CharacterShirtMinecraftChicken = JSON.parse(localStorage.getItem("CharacterShirtMinecraftChickenThisSaved"));
+		CharacterPantMinecraftChicken = JSON.parse(localStorage.getItem("CharacterPantMinecraftChickenThisSaved"));
 		
 		this.no_item_button.addEventListener("click", fl_MouseClickHandler_4.bind(this));
 		
@@ -6102,6 +6307,8 @@ if (reversed == null) { reversed = false; }
 				CharacterCapeMinecraftChicken = 0
 				CharacterGloveMinecraftChicken = 0
 				CharacterShoeMinecraftChicken = 0
+				CharacterShirtMinecraftChicken = 0
+				CharacterPantMinecraftChicken = 0
 			}
 		}
 		
@@ -6206,6 +6413,8 @@ if (reversed == null) { reversed = false; }
 			this.red_cape_button.visible = false
 			this.purple_spike_glove_button.visible = false
 			this.purple_spike_shoe_button.visible = false
+			this.purple_infinity_shirt_button.visible = false
+			this.purple_infinity_pant_button.visible = false
 		}
 		
 		this.shirt_button_group.addEventListener("click", fl_MouseClickHandler_7a.bind(this));
@@ -6218,6 +6427,8 @@ if (reversed == null) { reversed = false; }
 			this.red_cape_button.visible = false
 			this.purple_spike_glove_button.visible = false
 			this.purple_spike_shoe_button.visible = false
+			this.purple_infinity_shirt_button.visible = true
+			this.purple_infinity_pant_button.visible = false
 		}
 		
 		this.pant_button_group.addEventListener("click", fl_MouseClickHandler_8.bind(this));
@@ -6230,6 +6441,8 @@ if (reversed == null) { reversed = false; }
 			this.red_cape_button.visible = false
 			this.purple_spike_glove_button.visible = false
 			this.purple_spike_shoe_button.visible = false
+			this.purple_infinity_shirt_button.visible = false
+			this.purple_infinity_pant_button.visible = true
 		}
 		
 		this.shoe_button_group.addEventListener("click", fl_MouseClickHandler_9.bind(this));
@@ -6242,6 +6455,8 @@ if (reversed == null) { reversed = false; }
 			this.red_cape_button.visible = false
 			this.purple_spike_glove_button.visible = false
 			this.purple_spike_shoe_button.visible = true
+			this.purple_infinity_shirt_button.visible = false
+			this.purple_infinity_pant_button.visible = false
 		}
 		
 		this.cape_button_group.addEventListener("click", fl_MouseClickHandler_10.bind(this));
@@ -6254,6 +6469,8 @@ if (reversed == null) { reversed = false; }
 			this.red_cape_button.visible = true
 			this.purple_spike_glove_button.visible = false
 			this.purple_spike_shoe_button.visible = false
+			this.purple_infinity_shirt_button.visible = false
+			this.purple_infinity_pant_button.visible = false
 		}
 		
 		this.glove_button_group.addEventListener("click", fl_MouseClickHandler_11.bind(this));
@@ -6266,6 +6483,28 @@ if (reversed == null) { reversed = false; }
 			this.red_cape_button.visible = false
 			this.purple_spike_glove_button.visible = true
 			this.purple_spike_shoe_button.visible = false
+			this.purple_infinity_shirt_button.visible = false
+			this.purple_infinity_pant_button.visible = false
+		}
+		
+		
+		
+		
+		this.purple_infinity_shirt_button.addEventListener("click", fl_MouseClickHandler_6shirt.bind(this));
+		
+		function fl_MouseClickHandler_6shirt()
+		{
+			if(CharacterChoosen == 3){
+				CharacterShirtMinecraftChicken = 1
+			}
+		}
+		this.purple_infinity_pant_button.addEventListener("click", fl_MouseClickHandler_6pant.bind(this));
+		
+		function fl_MouseClickHandler_6pant()
+		{
+			if(CharacterChoosen == 3){
+				CharacterPantMinecraftChicken = 1
+			}
 		}
 	}
 
@@ -6304,7 +6543,7 @@ if (reversed == null) { reversed = false; }
 	new cjs.ButtonHelper(this.hat_button_group, 0, 1, 1);
 
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#00FFFF").ss(2,1).p("AhjH0IAAvnABkH0IAAvn");
+	this.shape.graphics.f().s("#00FFFF").ss(2,1).p("ABkH0IAAvnAhjH0IAAvn");
 	this.shape.setTransform(293.95,375.95);
 
 	this.shape_1 = new cjs.Shape();
@@ -6375,6 +6614,22 @@ if (reversed == null) { reversed = false; }
 	new cjs.ButtonHelper(this.crown_hat_button, 0, 1, 1);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.crown_hat_button},{t:this.top_hat_button}]}).wait(1));
+
+	// Pant
+	this.purple_infinity_pant_button = new lib.PurpleInfinityPantButton();
+	this.purple_infinity_pant_button.name = "purple_infinity_pant_button";
+	this.purple_infinity_pant_button.setTransform(590.35,374.9);
+	new cjs.ButtonHelper(this.purple_infinity_pant_button, 0, 1, 1);
+
+	this.timeline.addTween(cjs.Tween.get(this.purple_infinity_pant_button).wait(1));
+
+	// Shirt
+	this.purple_infinity_shirt_button = new lib.PurpleInfinityShirtButton();
+	this.purple_infinity_shirt_button.name = "purple_infinity_shirt_button";
+	this.purple_infinity_shirt_button.setTransform(590.35,374.9);
+	new cjs.ButtonHelper(this.purple_infinity_shirt_button, 0, 1, 1);
+
+	this.timeline.addTween(cjs.Tween.get(this.purple_infinity_shirt_button).wait(1));
 
 	// Shoe
 	this.purple_spike_shoe_button = new lib.PurpleSpikeShoeButton();
